@@ -3,6 +3,7 @@ package dyecb.demoapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,7 +23,7 @@ public class MainActivity extends Activity {
     }
 
     public void init() {
-
+        Log.d("tag", "this is an example log tag");
         mButton = (Button) findViewById(R.id.myButtton);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
